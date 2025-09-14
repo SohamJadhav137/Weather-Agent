@@ -1,0 +1,90 @@
+.input-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+    border: 1px solid rgb(212, 211, 211);
+}
+
+textarea{
+    font-family: 'Roboto Flex', sans-serif;
+    border: none;
+    height: 100px;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    overflow: auto;
+    resize: none;
+}
+
+textarea:focus{
+    outline: none;
+}
+
+.button-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding-bottom: 7px;
+    padding-right: 7px;
+}
+
+.button-container button{
+    width: 40px;
+    height: 40px;
+    background: url(button.png) no-repeat center center;
+    background-size: contain;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .input-container {
+    gap: 5px;
+    border-radius: 12px;
+  }
+  
+  textarea {
+    height: 80px;
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+  
+  .button-container {
+    padding-bottom: 5px;
+    padding-right: 5px;
+  }
+  
+  .button-container button {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .input-container {
+    border-radius: 10px;
+    gap: 3px;
+  }
+  
+  textarea {
+    height: 70px;
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+  
+  .button-container button {
+    width: 30px;
+    height: 30px;
+  }
+}

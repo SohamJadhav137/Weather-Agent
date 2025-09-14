@@ -1,0 +1,24 @@
+.message-list{
+    width: 100%;
+    height: 95%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .message-list {
+    height: 93%;
+    padding: 3px;
+  }
+}
+
+@media (max-width: 480px) {
+  .message-list {
+    height: 90%;
+    border-radius: 10px;
+  }
+}
